@@ -1,0 +1,16 @@
+
+-- create
+CREATE TABLE EMPLOYEE (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  age TEXT NOT NULL,
+  address TEXT NOT NULL
+);
+
+-- insert
+INSERT INTO EMPLOYEE VALUES (0001, 'Анна', '29', 'Ростов-на-Дону, ул. Закруткина, 70');
+INSERT INTO EMPLOYEE VALUES (0002, 'Анатолий', '60', 'Ставрополь, ул. 40-Лет Победы, 202');
+INSERT INTO EMPLOYEE VALUES (0003, 'Дмитрий', '45', 'Москва, ул. Народного Ополчения, 69');
+
+-- fetch 
+SELECT * FROM EMPLOYEE WHERE age > '44';
